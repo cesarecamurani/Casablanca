@@ -26,4 +26,6 @@ object Functions {
   def thisMightBeNull(value: Int): Option[Int] =
     if (value % 2 == 0) None
     else Some(value)
+
 }
+

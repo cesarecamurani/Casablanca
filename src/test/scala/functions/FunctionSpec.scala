@@ -32,7 +32,8 @@ class FunctionSpec extends FunSuite with Matchers {
     thisMightBeNull(6) shouldBe None
 
     //can you get the value out of the option
-    thisMightBeNull(5) shouldBe 5
+
+    thisMightBeNull(5).getOrElse("") shouldBe 5
   }
 
   //Challenges
