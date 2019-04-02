@@ -18,7 +18,7 @@ class FunctionSpec extends FunSuite with Matchers {
   }
 
   test("apply functions to list") {
-    List(2, 4, 6).map(num => ???) shouldBe List(4, 16, 36)
+    List(2, 4, 6).map(num => num*num) shouldBe List(4, 16, 36)
   }
 
   test("Square each element and sum up the list") {
