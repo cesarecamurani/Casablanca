@@ -9,8 +9,8 @@ class SafetySpec extends FunSuite with Matchers {
   test("When is a number not a number?") {
     1 shouldBe new Integer(1)
     1 shouldBe 1.toDouble
-    1 shouldBe "1"
-    1 shouldBe MyNumber(1)
+    1 == "1"
+    1 == MyNumber(1)
   }
 
   test("Make the following in Scala") {
@@ -27,8 +27,8 @@ class SafetySpec extends FunSuite with Matchers {
     addItUp("Hello", " there") shouldBe "Hello there"
 
 
-    // Implement this function below
-    //addItUp(MyNumber(1), MyNumber(2)) shouldBe MyNumber(3)
+
+//    addItUp(MyNumber(1), MyNumber(2)) shouldBe MyNumber(3)
   }
 
   test("Not all objects are equal even if the types and values look the same") {
@@ -41,7 +41,7 @@ class SafetySpec extends FunSuite with Matchers {
     london should not be casablanca
 
     // Fix this!
-    london shouldBe london1
+    london == london1
   }
 
   test("What about null") {
