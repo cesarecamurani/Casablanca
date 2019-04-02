@@ -17,7 +17,7 @@ object Functions {
 
   def sumUpFunctional: List[Int] => Int = { nums =>
     var curr = 0
-    for (i <- 0 to nums.size - 1) {
+    for (i <- 0 until nums.size ) {
       curr += nums(i)
     }
     curr
