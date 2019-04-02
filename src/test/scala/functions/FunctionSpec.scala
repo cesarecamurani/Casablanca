@@ -2,7 +2,6 @@ package functions
 
 import org.scalatest.{FunSuite, Matchers}
 import functions.Functions._
-
 class FunctionSpec extends FunSuite with Matchers {
 
   test("Write a function") {

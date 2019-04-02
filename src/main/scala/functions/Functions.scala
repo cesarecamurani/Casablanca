@@ -2,9 +2,10 @@ package functions
 
 object Functions {
 
-  val squared: Int => Int = ???
+  def squared(v: Int)= v*v
 
-  def multiply(x: Int, y: Int): Int = ???
+
+  def multiply(x: Int, y: Int): Int = x*y
 
   val sumUpImperative: List[Int] => Int = { nums =>
     var curr = 0
