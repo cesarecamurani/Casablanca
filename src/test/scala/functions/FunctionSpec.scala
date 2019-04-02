@@ -2,6 +2,7 @@ package functions
 
 import org.scalatest.{FunSuite, Matchers}
 import functions.Functions._
+
 class FunctionSpec extends FunSuite with Matchers {
 
   test("Write a function") {
@@ -23,6 +24,7 @@ class FunctionSpec extends FunSuite with Matchers {
   test("Square each element and sum up the list") {
     List(2, 4, 6)
       .map(num => num*num) shouldBe List(4, 16, 36)
+    List(4, 16, 36).sum shouldBe 56
   }
 
   test("What about null?") {
@@ -35,6 +37,6 @@ class FunctionSpec extends FunSuite with Matchers {
 
   //Challenges
   test("Square each element and sum it up in one iteration") {
-    ???
+    List(2, 4, 6).map(num => num*num).sum shouldBe 56
   }
 }
