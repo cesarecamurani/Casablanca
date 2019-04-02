@@ -30,9 +30,6 @@ class FunctionSpec extends FunSuite with Matchers {
   test("What about null?") {
     thisMightBeNull(5) shouldBe Some(5)
     thisMightBeNull(6).shouldBe(None)
-
-    //can you get the value out of the option
-
     thisMightBeNull(5).get shouldBe 5
   }
 

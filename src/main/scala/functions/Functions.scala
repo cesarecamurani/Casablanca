@@ -30,8 +30,6 @@ object Functions {
     ints.foldLeft(0)((acc, v) => squared(v) + acc)
 
 
-
-
   def thisMightBeNull(value: Int): Option[Int] =
     if (value % 2 == 0) None
     else Some(value)
