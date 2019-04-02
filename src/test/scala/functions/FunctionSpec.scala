@@ -29,15 +29,16 @@ class FunctionSpec extends FunSuite with Matchers {
 
   test("What about null?") {
     thisMightBeNull(5) shouldBe Some(5)
-    thisMightBeNull(6) shouldBe None
+    thisMightBeNull(6).shouldBe(None)
 
     //can you get the value out of the option
 
-    thisMightBeNull(5).getOrElse("") shouldBe 5
+    thisMightBeNull(5).get shouldBe 5
   }
 
   //Challenges
   test("Square each element and sum it up in one iteration") {
-    List(2, 4, 6).map(num => num*num).sum shouldBe 56
+    mapAndSum(List(2, 4, 6)) shouldBe 56
+    mapAndSum2(List(2, 4, 6)) shouldBe 56
   }
 }

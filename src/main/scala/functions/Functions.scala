@@ -23,6 +23,15 @@ object Functions {
     curr
   }
 
+  def mapAndSum(ints: List[Int]): Int =
+    ints.map(num => num*num).reduceLeft(_+_)
+
+  def mapAndSum2(ints: List[Int]): Int =
+    ints.foldLeft(0)((acc, v) => squared(v) + acc)
+
+
+
+
   def thisMightBeNull(value: Int): Option[Int] =
     if (value % 2 == 0) None
     else Some(value)
